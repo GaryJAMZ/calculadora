@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colculadora</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <main>
         <section class="action-result">
-            <input class="a" type="text"><input class="b" type="text">
-            <output id="output"></output>
+            <input title="number-a" id="a" type="text" value="">
+            <p id="operador"></p>
+            <input title="number-b" id="b" type="text" value="">
+            <p id="operadorigual">=</p>
+            <div>
+                <p id="output"></p>
+            </div>
         </section>
         <section class="operadores">
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+            <button onclick="sumas()" title="suma" type="button" id="suma">suma</button>
+            <button onclick="restas()" title="resta" type="button" id="resta">resta</button>
+            <button onclick="multiplicaciones()" title="multiplicación" type="button" id="multiplicación">multiplicación</button>
+            <button onclick="divisiones()" title="división" type="button" id="división">división</button>
+            <button onclick="resultados()" title="resultado" type="button" id="resultado">resultado</button>
         </section>
     </main>
+    <script src="./script.js"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
 </body>
 </html>
