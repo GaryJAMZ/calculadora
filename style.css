@@ -14,22 +14,34 @@ body{
 main{
     position: relative;
     width: 500px;
-    height: 110px;
-    background-color: black;
+    height: 250px;
+    background-color: rgb(9, 8, 8);
     display: flex;
     place-items: center;
     flex-direction: column;
+    box-shadow: -9px 7px 22px 1px rgba(0,0,0,0.75);
 }
 .action-result,
 .operadores{
     position: relative;
     display: flex;
     margin: 20px 0 0 0;
+    text-align: center;
+}
+.operadores{
+    align-items: center;
+    flex-direction: column;
+}
+.operadores .basicas,
+.operadores .intermedias,
+.operadores .avanzadas{
+    margin-bottom: 10px;
 }
 .action-result p{
     width: 10%;
     color: #ffffff;
     text-align: center;
+    font-size: 1.3rem;
 }
 .action-result div{
     width: 30%;
@@ -47,15 +59,18 @@ main{
     text-align: center;
     width: 25%;
 }
+.action-result #operadorigual{
+    text-align: center;
+}
 .operadores button{
     width: 70px;
     position: relative;
     margin-right: 10px;
     height: 30px;
 }
-.operadores button:nth-child(3){
+.operadores .basicas button:nth-child(3){
     font-size: 0.9rem;
 }
-.operadores button:nth-child(5){
-    margin-right: 0;
+.operadores .intermedias button:nth-child(2){
+    font-size: 1.1rem;
 }
